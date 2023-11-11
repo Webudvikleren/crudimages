@@ -1,0 +1,32 @@
+{
+    "name": "webudvikleren/crudimages",
+    "description": "Used to upload public images for a Laravel application.",
+    "autoload": {
+        "psr-4": {
+            "Webudvikleren\\CrudImages\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Philip Sørensen",
+            "email": "git@philipsoerensen.com",
+			"homepage": "https://philipsoerensen.com"
+        }
+    ],
+	"license": "MIT",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/philipsorensen/formcomponents"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/philipsorensen/iconcomponents"
+		}
+	],
+    "minimum-stability": "stable",
+    "require": {
+        "philipsorensen/formcomponents": "^1.0",
+        "philipsorensen/iconcomponents": "^1.0"
+    }
+}
