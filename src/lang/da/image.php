@@ -9,6 +9,7 @@ return [
 	'deleted' => 'Billedet er slettet.',
 	'edit' => 'Rediger billede',
 	'images' => 'Billeder',
+	'no-images' => 'Ingen billeder endnu.',
 	'select' => 'Vælg billede',
 	'show' => 'Vis billedet',
 	'title' => 'Titel',

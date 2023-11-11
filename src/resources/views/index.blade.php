@@ -16,7 +16,7 @@
 		<td>{{ trans('crudimages::image.title') }}</td>
 		<td class="text-center" colspan="4">{{ trans('crudimages::image.actions') }}</td>
 	</thead>
-	@foreach ($images as $image)
+	@forelse ($images as $image)
 		<tr>
 			<td>{{ ucfirst($image->category) }}</td>
 			<td>{{ ucfirst($image->title) }}</td>
@@ -41,6 +41,10 @@
 				</a>
 			</td>
 		</tr>
-	@endforeach
+	@empty
+		<tr>
+			<td class="text-center" colspan="6">{{ trans('crudimage::image.no-images') }}</td>
+		</tr>
+	@endforelse
 </table>
 @endsection

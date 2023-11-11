@@ -9,6 +9,7 @@ return [
 	'deleted' => 'Image deleted.',
 	'edit' => 'Edit image',
 	'images' => 'Images',
+	'no-images' => 'No images yet.',
 	'select' => 'Select image',
 	'show' => 'SHow image',
 	'title' => 'Title',
