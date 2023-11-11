@@ -43,7 +43,7 @@
 		</tr>
 	@empty
 		<tr>
-			<td class="text-center" colspan="6">{{ trans('crudimage::image.no-images') }}</td>
+			<td class="text-center" colspan="6">{{ trans('crudimages::image.no-images') }}</td>
 		</tr>
 	@endforelse
 </table>
