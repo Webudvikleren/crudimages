@@ -9,6 +9,7 @@ class StorageImageController extends Controller
 {
 	public function show(string $path)
 	{
+		$path = 'public/' . $path;
 		if (!Storage::exists($path))
 		{
 			abort(404);
