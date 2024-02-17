@@ -28,5 +28,12 @@
     "require": {
 		"philipsorensen/bootstrapicons": "^1.1",
         "philipsorensen/formcomponents": "^1.0"
-    }
+    },
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Webudvikleren\\CrudImages\\Providers\\CrudImagesProvider"
+			]
+		}
+	}
 }

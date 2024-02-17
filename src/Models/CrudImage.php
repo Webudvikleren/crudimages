@@ -11,4 +11,9 @@ class CrudImage extends Model
 
 	protected $guarded = [];
 	protected $table = 'crud_images';
+
+	public function getImageUrl()
+	{
+		return route('storage.crudimage.show', ['path' => $this->location]);
+	}
 }

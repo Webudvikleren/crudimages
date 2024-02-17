@@ -35,4 +35,8 @@ Route::controller(CrudImagesController::class)->middleware('can:image crud')->na
 	Route::get('{id}/edit', 'edit')->name('edit');
 	Route::post('{id}/edit', 'update');
 });
+
+Route::controller(StorageImageController::class)->name('storage.crudimage.')->prefix('images')->group(function () {
+	Route::get('{path}', 'show')->name('show')->where('path', '.*');
+});
 ```
