@@ -26,7 +26,7 @@
 				</a>
 			</td>
 			<td class="text-center">
-				<a class="" onclick="navigator.clipboard.writeText('{{ asset('storage/' . $image->location) }}')" style="cursor:pointer" title="{{ trans('crudimages::image.clipholder') }}">
+				<a class="" onclick="navigator.clipboard.writeText('{{ $image->getImageUrl() }}')" style="cursor:pointer" title="{{ trans('crudimages::image.clipholder') }}">
 					<x-bootstrapicons::card-image color="black" />
 				</a>
 			</td>
