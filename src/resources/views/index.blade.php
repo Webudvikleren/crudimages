@@ -21,7 +21,7 @@
 			<td>{{ ucfirst($image->category) }}</td>
 			<td>{{ ucfirst($image->title) }}</td>
 			<td class="text-center">
-				<a href="{{ asset('storage/' . $image->location) }}" target="_blank" title="{{ trans('crudimages::image.show') }}">
+				<a href="{{ $image->getImageUrl() }}" target="_blank" title="{{ trans('crudimages::image.show') }}">
 					<x-bootstrapicons::search />
 				</a>
 			</td>

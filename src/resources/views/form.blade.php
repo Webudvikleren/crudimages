@@ -4,7 +4,7 @@
 	@if (isset($image))
 		<div class="row">
 			<div class="col-sm-6 mb-3 text-center">
-				<img class="img-fluid" src="{{ asset('storage/' . $image->location) }}">
+				<img class="img-fluid" src="{{ $image->getImageUrl() }}">
 			</div>
 			<div class="col-sm-6 align-self-center">
 	@endif
